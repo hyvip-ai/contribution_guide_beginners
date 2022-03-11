@@ -1,0 +1,14 @@
+{
+  "contributors": [
+    {
+      "name": "Rajat Mondal",
+      "email": "rm2932002@gmail.com",
+      "github": "https://github.com/hyvip-ai",
+      "linkedin": "https://www.linkedin.com/in/rajat-mondal-a7abb8199/",
+      "expertise": ["React", "Svelte", "Angular"],
+      "year": "3rd Year",
+      "designation": "Web Developer",
+      "about": "Hi I am Rajat, a 19 year old Web Developer, living in Kolkata, India. In love with JavaScript"
+    }
+  ]
+}
