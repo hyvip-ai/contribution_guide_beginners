@@ -7,4 +7,5 @@ export interface User {
   batch: string;
   designation: string;
   about: string;
+  avatar: string;
 }

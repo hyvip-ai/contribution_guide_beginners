@@ -127,6 +127,7 @@ body {
   left: 50%;
 }
 .card-jobtitle {
+  font-weight: 600;
   position: absolute;
   bottom: 0;
   font-size: 11px;
@@ -306,12 +307,13 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 .card-contact-wrapper {
-  margin-top: 20px;
+  padding: 20px;
+  padding-top: 0px;
 }
 .card-contact {
   display: flex;
   align-items: center;
-  font-size: 13px;
+  font-size: 15px;
   color: #6f6f7b;
   font-family: "DM Sans", sans-serif;
   line-height: 1.6;
@@ -322,7 +324,7 @@ body {
 }
 .card-contact svg {
   flex-shrink: 0;
-  width: 30px;
+  width: 36px;
   min-height: 34px;
   margin-right: 12px;
   transition: 0.3s;
