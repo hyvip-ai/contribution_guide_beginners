@@ -6,9 +6,10 @@
       "github": "https://github.com/hyvip-ai",
       "linkedin": "https://www.linkedin.com/in/rajat-mondal-a7abb8199/",
       "expertise": ["React", "Svelte", "Angular"],
-      "year": "3rd Year",
+      "batch": "2019-2023",
       "designation": "Web Developer",
-      "about": "Hi I am Rajat, a 19 year old Web Developer, living in Kolkata, India. In love with JavaScript"
+      "about": "Hi I am Rajat, a 19 year old Web Developer, living in Kolkata, India. In love with JavaScript",
+      "avatar": "https://avatars.githubusercontent.com/u/74717766?s=400&u=d17259f0e6d89fe1bd40229395db01aae39a9507&v=4"
     }
   ]
 }
