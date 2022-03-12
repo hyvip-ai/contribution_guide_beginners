@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useEffect } from "react";
 import { User } from "../types/user";
 interface Contributor {
@@ -14,11 +15,9 @@ function ContributorCard(props: Contributor) {
             backgroundImage: `url(${props.contributor.avatar})`,
           }}
         ></div>
-        <img
-          className="card-avatar"
-          src={props.contributor.avatar}
-          alt="avatar"
-        />
+        <div className="card-avatar">
+          <Image src={props.contributor.avatar} alt="avatar" layout="fill" />
+        </div>
         <h1 className="card-fullname">{props.contributor.name}</h1>
         <h2 className="card-jobtitle">{props.contributor.designation}</h2>
       </div>

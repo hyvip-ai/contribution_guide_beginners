@@ -8,9 +8,17 @@ interface ContributorProp {
 function contributors(props: ContributorProp) {
   console.log(props.contributors);
 
-  return props.contributors.map((contributor) => {
-    return <ContributorCard key={Math.random()} contributor={contributor} />;
-  });
+  return (
+    <>
+      <div className="contributor_container">
+        {props.contributors.map((contributor) => {
+          return (
+            <ContributorCard key={Math.random()} contributor={contributor} />
+          );
+        })}
+      </div>
+    </>
+  );
 }
 
 export default contributors;
