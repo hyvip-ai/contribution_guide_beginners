@@ -9,7 +9,7 @@ function contributors(props: ContributorProp) {
   console.log(props.contributors);
 
   return (
-    <>
+    <div className="outer">
       <div className="contributor_container">
         {props.contributors.map((contributor) => {
           return (
@@ -17,7 +17,7 @@ function contributors(props: ContributorProp) {
           );
         })}
       </div>
-    </>
+    </div>
   );
 }
 
@@ -25,7 +25,7 @@ export default contributors;
 
 export async function getServerSideProps() {
   const contributors: User[] = await fetch(
-    ` https://my-json-server.typicode.com/hyvip-ai/contribution_guide_beginners/contributors`
+    `https://my-json-server.typicode.com/hyvip-ai/contribution_guide_beginners/contributors`
   ).then((res) => res.json());
   console.log(contributors);
   return {
