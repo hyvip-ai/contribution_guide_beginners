@@ -47,6 +47,18 @@ function ContributorCard(props: Contributor) {
               </svg>
             </a>
           </div>
+          <div className="expertise">
+            {props.contributor.expertise.map((expertise) => {
+              return (
+                <span
+                  className="badge rounded-pill badge-dragon"
+                  key={expertise}
+                >
+                  {expertise}
+                </span>
+              );
+            })}
+          </div>
           <div className="card-contact-wrapper">
             <div className="card-contact">
               <svg

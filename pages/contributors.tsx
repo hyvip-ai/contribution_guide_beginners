@@ -9,13 +9,32 @@ function contributors(props: ContributorProp) {
   console.log(props.contributors);
 
   return (
-    <div className="outer">
-      <div className="contributor_container">
-        {props.contributors.map((contributor) => {
-          return (
-            <ContributorCard key={Math.random()} contributor={contributor} />
-          );
-        })}
+    <div className="contributors">
+      <div>
+        <h1 className="heading">
+          {props.contributors.length} Contributors Till Now
+        </h1>
+        <a
+          className="button"
+          href="https://github.com/hyvip-ai/contribution_guide_beginners"
+        >
+          <span className="button__mask"></span>
+          <span className="button__text">
+            Join Our Community Get Yourself Featured
+          </span>
+          <span className="button__text button__text--bis">
+            Join Our Community Get Yourself Featured
+          </span>
+        </a>
+      </div>
+      <div className="outer">
+        <div className="contributor_container">
+          {props.contributors.map((contributor) => {
+            return (
+              <ContributorCard key={Math.random()} contributor={contributor} />
+            );
+          })}
+        </div>
       </div>
     </div>
   );
