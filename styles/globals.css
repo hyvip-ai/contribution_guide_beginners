@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,700,900");
+
 html,
 body {
   padding: 0;
@@ -16,10 +18,23 @@ a {
   box-sizing: border-box;
 }
 body {
-  color: #2b2c48;
   font-family: "Jost", sans-serif;
 }
+.homeWrapper {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.homeWrapper .left,
+.homeWrapper .right {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
 .contributors {
+  min-height: 100vh;
   background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
 .heading {
@@ -28,13 +43,93 @@ body {
   padding-top: 25px;
   text-align: center;
 }
+.pink {
+  border-color: #eb1777;
+  background-color: transparent;
+  border-style: solid;
+  position: relative;
+  display: inline-block;
+
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  cursor: pointer;
+}
+.pink a {
+  color: #eb1777;
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 0.5em 1em;
+}
+.pink:before,
+.pink:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-color: #454545;
+  box-sizing: border-box;
+  border-style: solid;
+  width: 1em;
+  height: 1em;
+  transition: all 0.3s ease-in-out;
+}
+.pink:before {
+  top: -6px;
+  left: -6px;
+  border-width: 2px 0 0 2px;
+  z-index: 5;
+}
+.pink:after {
+  bottom: -6px;
+  right: -6px;
+  border-width: 0 2px 2px 0;
+}
+.pink::before,
+.pink::after {
+  border-color: #eb1777;
+}
+button:hover:before,
+button:hover:after {
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  z-index: -1;
+}
+.pink:hover:before,
+.pink:hover:after {
+  border-color: #eb1777;
+}
+.pink:hover {
+  color: #fff;
+  background-color: #eb1777;
+  border-color: #eb1777;
+}
+.pink:hover a {
+  color: white;
+}
+.pink .panel {
+  max-width: 960px;
+  text-align: center;
+  position: relative;
+  margin: auto;
+}
+.homeWrapper .left {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.homeWrapper .left h1,
+.homeWrapper .left h3,
+.homeWrapper .left button {
+  margin-left: 2rem;
+}
 .outer {
   width: 100%;
-  min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
   margin-top: 25px;
+  justify-content: center;
 }
 .card {
   max-width: 340px;
@@ -54,6 +149,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: flex-start;
 }
 .card {
   overflow: hidden;
@@ -304,12 +400,6 @@ body {
   border-right: 1px solid #dfe2ec;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,700,900");
-body {
-  font-family: "Work Sans", sans-serif;
-  background: #111;
-  text-align: center;
-}
 .wrapper {
   width: 100vw;
   height: 100vh;
@@ -401,6 +491,30 @@ body {
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .homeWrapper .left {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .homeWrapper .left h1,
+  .homeWrapper .left h3,
+  .homeWrapper .left button {
+    margin-left: 0;
+  }
+  .homeWrapper .right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 250px;
+    width: 250px;
+  }
+  .homeWrapper .left button {
+    margin-right: 15px;
+    margin-bottom: 15px;
   }
 }
 

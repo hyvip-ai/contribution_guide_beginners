@@ -10,13 +10,14 @@ function contributors(props: ContributorProp) {
 
   return (
     <div className="contributors">
-      <div>
+      <div style={{ display: "flex", flexDirection: "column" }}>
         <h1 className="heading">
           {props.contributors.length} Contributors Till Now
         </h1>
         <a
           className="button"
           href="https://github.com/hyvip-ai/contribution_guide_beginners"
+          style={{ margin: "0px auto" }}
         >
           <span className="button__mask"></span>
           <span className="button__text">
