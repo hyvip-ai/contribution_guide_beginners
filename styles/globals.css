@@ -465,6 +465,31 @@ button:hover:after {
   background: white;
   color: inherit;
 }
+button.go-back {
+  font-size: 20px;
+  font-family: "Combo", cursive;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s linear;
+  z-index: 9;
+  border-radius: 50%;
+  background: #c0d7dd;
+  color: #33265c;
+  box-shadow: 0 0 10px 0 #c0d7dd;
+  margin-top: 20px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button:hover {
+  box-shadow: 0 0 20px 0 #c0d7dd;
+}
+
 @keyframes fx-mask {
   0% {
     transform: translateX(-100%) rotate(45deg);

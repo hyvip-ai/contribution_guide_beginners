@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import ContributorCard from "../components/ContributorCard";
 import { User } from "../types/user";
@@ -37,6 +39,15 @@ function contributors(props: ContributorProp) {
           })}
         </div>
       </div>
+      <Link href="/" passHref>
+        <button className="go-back">
+          <Image
+            src="http://cdn.onlinewebfonts.com/svg/img_68752.png"
+            alt="back"
+            layout="fill"
+          />
+        </button>
+      </Link>
     </div>
   );
 }
