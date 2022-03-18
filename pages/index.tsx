@@ -1,9 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
+import Document from "../components/Document";
 
 export default function Home() {
   return (
     <>
+      <Document
+        title="Contribution Guide"
+        description="Welcome to the Home page of Contribution Guide, you one stop to get started with open source"
+      />
       <div className="homeWrapper">
         <div className="left">
           <h1>Creativity starts with viewing the whole world differently</h1>
