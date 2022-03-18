@@ -10,6 +10,17 @@
       "designation": "Web Developer",
       "about": "Hi I am Rajat, a 19 year old Web Developer, living in Kolkata, India. In love with JavaScript",
       "avatar": "https://avatars.dicebear.com/4.5/api/avataaars/RajAt.svg"
+    },
+    {
+      "name": "Srijita Sengupta",
+      "email": "srijitasengupta23@gmail.com",
+      "github": "https://github.com/srijit-ops",
+      "linkedin": "https://www.linkedin.com/in/srijita-sengupta-0561a81b5/",
+      "expertise": ["Javascript", "HTML", "CSS"],
+      "batch": "2010-2024",
+      "designation": "Frontend Developer",
+      "about": "Hi I am Srijita, a 19 year old Web Developer, living in Kolkata, India. In love with JavaScript",
+      "avatar": "https://avatars.dicebear.com/4.5/api/avataaars/Srijita.svg"
     }
   ]
 }
