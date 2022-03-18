@@ -14,7 +14,8 @@ function contributors(props: ContributorProp) {
     <div className="contributors">
       <div style={{ display: "flex", flexDirection: "column" }}>
         <h1 className="heading">
-          {props.contributors.length} Contributors Till Now
+          {props.contributors.length} Contributor
+          {props.contributors.length > 1 ? "s" : ""} Till Now
         </h1>
         <a
           className="button"
